@@ -28,6 +28,17 @@ El proyecto sigue una arquitectura en capas:
 
 Proyecto en desarrollo activo, hecho con fines de aprendizaje y práctica de arquitectura en capas, persistencia y JavaFX.
 
+## Implementación
+
+Hasta ahora el proyecto solo tiene implementado la parte de Silo y Animales. 
+En silo se pueden cargar los silos con sus respectivos datos. Adjunto imagen:
+<img width="867" height="682" alt="image" src="https://github.com/user-attachments/assets/0917b179-ff68-4efb-a13c-b8f1b2ef1246" />
+
+En animales se pueden cargar los datos de los distintos animales que se tienen en el campo (Por ahora son vacas, toros y terneros), antes de comenzar a cargar se muestra una pantalla para que elija la opcion de que animal se cargaran los datos. Adjunto imagen:
+<img width="747" height="687" alt="image" src="https://github.com/user-attachments/assets/d741a0e9-7b62-4efa-a582-820881a777ea" />
+
+Faltan implementar las demas funciones.
+
 ## Cómo correrlo
 
 \`\`\`bash
@@ -35,3 +46,4 @@ mvn clean javafx:run
 \`\`\`
 
 <img width="732" height="527" alt="image" src="https://github.com/user-attachments/assets/a04903f2-4e9a-43a3-80fa-7b12a096223b" />
+
