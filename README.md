@@ -7,7 +7,6 @@ Aplicación de escritorio en Java para la gestión integral de un establecimient
 - **Java 21**
 - **JavaFX** — interfaz gráfica de escritorio
 - **SQLite** — persistencia de datos embebida
-- **Lombok** — reducción de código repetitivo
 - **Maven** — gestión de dependencias y build
 
 ## Arquitectura
