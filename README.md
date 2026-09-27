@@ -33,3 +33,5 @@ Proyecto en desarrollo activo, hecho con fines de aprendizaje y práctica de arq
 \`\`\`bash
 mvn clean javafx:run
 \`\`\`
+
+<img width="732" height="527" alt="image" src="https://github.com/user-attachments/assets/a04903f2-4e9a-43a3-80fa-7b12a096223b" />
