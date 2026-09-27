@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.main.tambo.controllers.SiloController">
+    <top>
+        <VBox spacing="10" BorderPane.alignment="CENTER">
+            <padding><Insets top="20" bottom="10" left="20" right="20" /></padding>
+            <Label text="Gestión de Silos" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="tablaSilos" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="colIdentificador" text="Identificador" prefWidth="120" />
+                <TableColumn fx:id="colTipoAlimento" text="Tipo de Alimento" prefWidth="150" />
+                <TableColumn fx:id="colCapacidad" text="Capacidad (Kg)" prefWidth="120" />
+                <TableColumn fx:id="colStock" text="Stock Actual (Kg)" prefWidth="130" />
+                <TableColumn fx:id="colCosto" text="Costo x Kg" prefWidth="100" />
+                <TableColumn fx:id="colActivo" text="Activo" prefWidth="80" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" BorderPane.alignment="CENTER">
+            <padding><Insets top="15" bottom="20" /></padding>
+            <Button fx:id="btnNuevoSilo" text="Nuevo Silo" onAction="#nuevoSilo" />
+            <Button fx:id="btnVolver" text="Volver al Menú" onAction="#volverAlMenu" />
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.main.tambo.controllers.AnimalController">
+    <top>
+        <VBox spacing="10" BorderPane.alignment="CENTER">
+            <padding><Insets top="20" bottom="10" left="20" right="20" /></padding>
+            <Label text="Gestión de Animales" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="tablaAnimales" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50" />
+                <TableColumn fx:id="colEspecie" text="Especie" prefWidth="90" />
+                <TableColumn fx:id="colEdadMeses" text="Edad (meses)" prefWidth="100" />
+                <TableColumn fx:id="colPeso" text="Peso (Kg)" prefWidth="90" />
+                <TableColumn fx:id="colSexo" text="Sexo" prefWidth="80" />
+                <TableColumn fx:id="colEstadoSalud" text="Estado Salud" prefWidth="120" />
+                <TableColumn fx:id="colActivo" text="Activo" prefWidth="70" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" BorderPane.alignment="CENTER">
+            <padding><Insets top="15" bottom="20" /></padding>
+            <Button fx:id="btnNuevoAnimal" text="Nuevo Animal" onAction="#nuevoAnimal" />
+            <Button fx:id="btnVolver" text="Volver al Menú" onAction="#volverAlMenu" />
+        </HBox>
+    </bottom>
+</BorderPane>
